@@ -27,10 +27,36 @@
 /* STYLE ROOT  */
 
 /* STYLE BODY */
+*,
 body{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: iranBold !important;
   font-size: 1rem !important;
 }
 /* STYLE BODY */
+
+
+/* STYLE BUTTON  */
+.button{
+  margin: 4rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--colorOrange);
+  outline: none;
+  border: none;
+  border-radius: 1rem;
+  width: 100px;
+  height: 3rem;
+  font-family: var(--black) !important;
+  font-size: 1.3rem;
+  color: var(--colorWhite);
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+.button:hover{
+  background-color: var(--colorBlack);
+}
+/* STYLE BUTTON  */
