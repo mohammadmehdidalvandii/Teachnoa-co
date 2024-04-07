@@ -37,10 +37,14 @@ body{
 }
 /* STYLE BODY */
 
+/* UL */
+ul{
+  list-style: none;
+}
+/* UL */
 
 /* STYLE BUTTON  */
 .button{
-  margin: 4rem auto;
   display: flex;
   justify-content: center;
   align-items: center;
