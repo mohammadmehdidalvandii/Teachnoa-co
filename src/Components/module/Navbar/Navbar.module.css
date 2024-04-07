@@ -32,6 +32,80 @@
 .navbar_item_link:hover{
     color: var(--colorOrange);
 }
+.navbar_item_link_active{
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: var(--colorOrange);
+}
 .navbar_login{
     text-decoration: none;
+}
+.navbar_Res{
+    display: block;
+    position: fixed;
+    width: 100%;
+    margin: 1.5rem 0;
+}
+.navbar_Res_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.navbar_Res_logo{
+    display: block;
+    text-decoration: none;
+    font-family: var(--black) !important;
+    font-size: 2rem !important;
+    color: var(--colorOrange);
+}
+.navbar_Res_icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem !important;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: var(--colorOrange);
+    color: var(--colorWhite);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+.navbar_Res_icon:hover{
+    background-color: var(--colorBlack);
+}
+.navbar_Res_items{
+    display: block;
+    width: 100%;
+    background-color: var(--colorOrange);
+    position: absolute; 
+    top: 4rem;
+    padding: 1rem;
+}
+.navbar_Res_item{
+    display: block;
+    margin-bottom: 1.5rem;
+}
+.navbar_Res_item_link{
+    display: block;
+    padding: 0.3rem;
+    text-decoration: none;
+    color: var(--colorWhite);
+    font-size: 1.1rem;
+    border-radius: 0.4rem;
+    transition: all 0.3s ease-in;
+}
+.navbar_Res_item_link:hover{
+    background-color: var(--colorWhite);
+    color: var(--colorText);
+}
+.navbar_Res_item_linkActive{
+    display: block;
+    padding: 0.3rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+    border-radius: 0.4rem;
+    background-color: var(--colorWhite);
+    color: var(--colorText);
 }
