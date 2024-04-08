@@ -9,7 +9,23 @@ import { usePathname } from 'next/navigation';
 function Navbar() {
     const [menuNav , setMenuNav] = useState(false);
     const [activeMenu , setActiveMenu] = useState('/')
+    const [fixNavbar , setFixNavbar] = useState(false)
     const pathName = usePathname()
+
+    useEffect(()=>{
+        const fixNavbarToTop= ()=>{
+            const currentScroll = window.scrollY
+            if(currentScroll > 80){
+                setFixNavbar(true)
+            } else{
+                setFixNavbar(false)
+            }
+        }
+
+        window.addEventListener("scroll" , fixNavbarToTop)
+        return ()=> window.removeEventListener("scroll" , fixNavbarToTop)
+    },[])
+
 
     useEffect(()=>{
         const path_name = pathName
@@ -22,7 +38,7 @@ function Navbar() {
     }
   return (
     <>
-        <section className={`${style.navBar} ${'d-none d-lg-flex'}`}>
+        <section className={`${fixNavbar ? style.navbar_fixed : style.navBar} ${'d-none d-lg-flex'}`}>
             <div className="container">
                 <div className={style.navbar_wrapper}>
                     <Link href='/'  className={style.navbar_logo}>
@@ -54,7 +70,7 @@ function Navbar() {
             </div>
         </section>
         
-        <section className={`${style.navbar_Res} ${'d-block d-lg-none'}`}>
+        <section className={`${fixNavbar ? style.navbar_fixed : style.navBar} ${'d-block d-lg-none'}`}>
             <div className="container">
                 <div className={style.navbar_Res_wrapper}>
                     <Link href='/' className={style.navbar_Res_logo}>
