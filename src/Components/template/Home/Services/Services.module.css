@@ -1,0 +1,43 @@
+.services{
+    display: block;
+    width: 100%;
+    margin-block: 5rem  ;
+}
+.services_item{
+    display: block;
+    margin-bottom: 1rem;
+    text-align: center;
+    padding: 2rem 1rem;
+    border-radius: 0.5rem;
+    background-color: var(--colorGray-1);
+    transition: all 0.3s ease-in;
+}
+.services_item:hover{
+    background-color: var(--colorBlue);
+    color: var(--colorWhite) !important;
+}
+.services_item:hover .services_item_title{
+    color: var(--colorWhite) !important;
+}
+.services_item:hover .services_item_text{
+    color: var(--colorWhite) !important;
+}
+.services_item_icon svg{
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 3rem !important; 
+}
+.services_item_title{
+    display: block;
+    margin-block: 1rem  ;
+    font-size: 1.3rem !important;
+    color: var(--colorBlue);
+    transition: all 0.3s ease-in;
+}
+.services_item_text{
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--colorText);
+    transition: all 0.3s ease-in;
+}
