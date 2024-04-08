@@ -1,13 +1,21 @@
 "use client"
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import style from './Navbar.module.css';
 import Link from 'next/link';
 import { FaBars , FaTimes  } from "react-icons/fa";
+import { usePathname } from 'next/navigation';
 
 
 function Navbar() {
     const [menuNav , setMenuNav] = useState(false);
     const [activeMenu , setActiveMenu] = useState('/')
+    const pathName = usePathname()
+
+    useEffect(()=>{
+        const path_name = pathName
+        setActiveMenu(path_name)
+        setMenuNav(false)
+    },[pathName])
 
     const handlerMenuNav = ()=>{
         setMenuNav(! menuNav)
