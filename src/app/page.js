@@ -1,3 +1,4 @@
+import Footer from '@/Components/module/Footer/Footer'
 import Navbar from '@/Components/module/Navbar/Navbar'
 import Banner from '@/Components/template/Home/Banner/Banner'
 import Comments from '@/Components/template/Home/Comments/Comments'
@@ -17,6 +18,7 @@ function page() {
       <Counter/>
       <Comments/>
       <News/>
+      <Footer/>
     </>
     )
 }
