@@ -1,0 +1,42 @@
+.newsCard{
+    display: block;
+    margin-bottom: 1rem;
+    width: 100%;
+    text-align: center;
+    border-radius: 0.7rem;
+    overflow: hidden;
+    border: 1px solid var(--colorGray-1);
+    transition: all 0.3s ease-in;
+}
+.newsCard:hover .newsCard_img{
+    transform: rotateY(25deg);
+}
+.newsCard_img{
+    width: 100%;
+    border-radius: 0.6rem;
+    transition: all 0.3 ease-in;
+}
+.newsCard_content{
+    display: block;
+    padding: 1.5rem 0;
+}
+.newsCard_category{
+    display: block;
+    font-size: 1.1rem;
+    color: var(--colorText);
+}
+.newsCard_title{
+    display: block;
+    font-family: var(--black);
+    font-size: 1.6rem !important; 
+    margin: 1rem 0;
+    color: var(--colorOrange);
+}
+.newsCard_creator{
+    display: block;
+    color: var(--colorBlack);
+}
+.newsCard_date{
+    font-size: 0.9rem !important;
+    color: var(--colorText);
+}
