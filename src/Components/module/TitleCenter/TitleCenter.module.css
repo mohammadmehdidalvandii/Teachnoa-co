@@ -1,0 +1,24 @@
+.titleCenter{
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.titleCenter_wrapper{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.titleCenter_title{
+    display: block;
+    font-family: var(--black);
+    font-size: 2.5rem !important;
+    color: var(--colorOrange);
+}
+.titleCenter_text{  
+display: block;
+margin-top: 0.8rem;
+font-size: 0.9rem !important;
+font-weight: 600;
+color: var(--colorText);
+}
