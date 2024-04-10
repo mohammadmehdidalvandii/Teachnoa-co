@@ -1,0 +1,60 @@
+.pageHeader{
+    display: block;
+    width: 100%;
+    height: 40dvh;
+    background: url(/images/cta-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    position: relative;
+    z-index: -1;
+}
+.pageHeader::before{
+    display: block;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: inherit;
+    background-color: rgba(250,250,250,0.8);  
+    z-index: -2;
+}
+.pageHeader_content{    
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 7rem;
+}
+.pageHeader_content_title{
+    display: block;
+    font-family: var(--black);
+    font-size: 2.5rem !important;
+    color: var(--colorOrange);
+}
+.pageHeader_content_desc{
+    font-size: 0.9rem !important;
+    font-weight: 700;
+    color: var(--colorText);
+}
+.pageHeader_route{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 4rem;
+    width: 100%;
+    height: 3rem;
+    background-color: var(--colorGray-1);
+}
+.pageHeader_route_link{
+    display: block;
+    font-size: 1.1rem !important;
+    text-decoration: none ;
+    color: var(--colorOrange);
+    transition: all 0.3s ease-in;
+}   
+.pageHeader_route_link:hover{
+    color: var(--colorBlack);
+}
+.pageHeader_route_text{
+
+}
