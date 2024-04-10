@@ -50,7 +50,7 @@ function Navbar() {
                             <Link href='/' className={ activeMenu === '/' ?  style.navbar_item_link_active  :style.navbar_item_link} >خانه</Link>
                         </li>
                         <li className={style.navbar_item}>
-                            <Link href='/About' className={ activeMenu === '/About' ?  style.navbar_item_link_active  :style.navbar_item_link} >درباره ما</Link>
+                            <Link href='/AboutUs' className={ activeMenu === '/AboutUs' ?  style.navbar_item_link_active  :style.navbar_item_link} >درباره ما</Link>
                         </li>
                         <li className={style.navbar_item}>
                             <Link href='/Services' className={ activeMenu === '/Services' ?  style.navbar_item_link_active  :style.navbar_item_link} >خدمات ما</Link>
@@ -92,7 +92,7 @@ function Navbar() {
                                 <Link  href='/' className={activeMenu === '/'? style.navbar_Res_item_linkActive : style.navbar_Res_item_link}>خانه</Link>
                             </li>
                             <li className={style.navbar_Res_item}>
-                                <Link  href='/About' className={activeMenu === '/About'? style.navbar_Res_item_linkActive : style.navbar_Res_item_link}>درباره ما</Link>
+                                <Link  href='/AboutUs' className={activeMenu === '/AboutUs'? style.navbar_Res_item_linkActive : style.navbar_Res_item_link}>درباره ما</Link>
                             </li>
                             <li className={style.navbar_Res_item}>
                                 <Link  href='/Services' className={activeMenu === '/Services'? style.navbar_Res_item_linkActive : style.navbar_Res_item_link}>خدمات ما</Link>
