@@ -7,10 +7,7 @@ function page() {
   return (
     <>
       <Navbar />
-    <PageHeader 
-      title='درباره ما'
-      text='درباره ما'
-    />
+      <PageHeader title="درباره ما" text="درباره ما" />
       <Footer />
     </>
   );
