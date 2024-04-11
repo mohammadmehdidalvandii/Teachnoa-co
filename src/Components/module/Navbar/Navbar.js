@@ -62,7 +62,7 @@ function Navbar() {
                             <Link href='/News' className={ activeMenu === '/News' ?  style.navbar_item_link_active  :style.navbar_item_link} >اخبار</Link>
                         </li>
                         <li className={style.navbar_item}>
-                            <Link href='/Contact' className={ activeMenu === '/Contact' ?  style.navbar_item_link_active  :style.navbar_item_link} >تماس با ما</Link>
+                            <Link href='/ContactUs' className={ activeMenu === '/ContactUs' ?  style.navbar_item_link_active  :style.navbar_item_link} >تماس با ما</Link>
                         </li>
                     </ul>
                     <Link href='/' className={`${style.navbar_login} ${'button'}`}>ورود</Link>
@@ -104,7 +104,7 @@ function Navbar() {
                                 <Link  href='/News' className={activeMenu === '/News'? style.navbar_Res_item_linkActive : style.navbar_Res_item_link}>اخبار</Link>
                             </li>
                             <li className={style.navbar_Res_item}>
-                                <Link  href='/Contact' className={activeMenu === '/Contact'? style.navbar_Res_item_linkActive : style.navbar_Res_item_link}>تماس با ما</Link>
+                                <Link  href='/ContactUs' className={activeMenu === '/ContactUs'? style.navbar_Res_item_linkActive : style.navbar_Res_item_link}>تماس با ما</Link>
                             </li>
                             <li className={style.navbar_Res_item}>
                                 <Link  href='/Login' className={activeMenu === '/Login'? style.navbar_Res_item_linkActive : style.navbar_Res_item_link}>ورود</Link>
