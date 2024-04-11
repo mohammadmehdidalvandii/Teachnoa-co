@@ -1,0 +1,44 @@
+.service{
+    display: block;
+    width: 100%;
+    margin: 4rem 0;
+}
+.service_item{
+    display: block;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    padding: 2rem 1.5rem;
+    background-color: var(--colorGray-1);
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+.service_item:hover{
+    background-color: var(--colorBlue);
+}
+.service_item:hover .service_item_title{
+    color: var(--colorWhite);
+}
+.service_item:hover .service_item_text{
+    color: var(--colorWhite);
+}
+.service_item:hover .Service_item_icon svg{
+    color: var(--colorWhite);
+}
+.Service_item_icon svg{
+    font-size: 3rem !important;
+    color: var(--colorOrange);
+}
+.service_item_title{
+    display: block;
+    margin-block: 0.8rem;
+    font-family: var(--black);
+    font-size: 1.2rem !important;
+    color: var(--colorBlue);
+    transition: all 0.3s ease-in;
+}
+.service_item_text{
+    font-size: 0.9rem;
+    color: var(--colorBlack);
+    transition: all 0.3s ease-in;
+}
