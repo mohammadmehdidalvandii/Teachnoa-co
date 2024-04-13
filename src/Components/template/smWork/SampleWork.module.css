@@ -1,0 +1,21 @@
+.sampleWork{
+    display: block;
+    width: 100%;
+    margin: 4rem 0;
+    transition: all 0.4s ease-out;
+}
+.sampleWork:hover .sampleWork_card_img{
+    filter: grayscale(0);
+}
+.sampleWork_card{
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 0.6rem;
+    margin-bottom: 1rem;
+}
+.sampleWork_card_img{
+    width: 100%;
+    filter: grayscale(1);
+    transition: all 0.4s ease-out;
+}
