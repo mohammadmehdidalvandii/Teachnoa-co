@@ -65,7 +65,7 @@ function Navbar() {
                             <Link href='/ContactUs' className={ activeMenu === '/ContactUs' ?  style.navbar_item_link_active  :style.navbar_item_link} >تماس با ما</Link>
                         </li>
                     </ul>
-                    <Link href='/' className={`${style.navbar_login} ${'button'}`}>ورود</Link>
+                    <Link href='/Login' className={`${style.navbar_login} ${'button'}`}>ورود</Link>
                 </div>
             </div>
         </section>
